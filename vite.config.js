@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 dotenv.config();
 
 export default defineConfig({
+  base: '',
   publicDir: 'resources/static',
   build: {
     assetsDir: '',
