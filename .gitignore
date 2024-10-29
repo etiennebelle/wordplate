@@ -1,0 +1,14 @@
+.env
+/node_modules
+/public/debug.log
+/public/languages
+/public/mu-plugins/*
+!/public/mu-plugins/mu-plugins.php
+/public/plugins/*
+!/public/plugins/index.php
+/public/themes/*/assets
+/public/upgrade
+/public/uploads
+/public/wordpress
+/vendor
+auth.json

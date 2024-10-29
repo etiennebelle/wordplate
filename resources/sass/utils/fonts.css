@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "NeueMontreal-Regular";
+  src: url("/resources/static/fonts/NeueMontreal-Regular.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+.headline {
+  font-family: "NeueMontreal-Regular", "sans-serif";
+}
+
+/*# sourceMappingURL=fonts.css.map */
