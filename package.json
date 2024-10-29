@@ -6,7 +6,9 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "sass": "^1.80.4",
     "vite": "^5.4.4"
+  },
+  "devDependencies": {
+    "sass": "^1.80.4"
   }
 }
