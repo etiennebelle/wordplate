@@ -29,7 +29,7 @@ add_action('wp_enqueue_scripts', function () {
     } elseif (file_exists($manifestPath)) {
         $manifest = json_decode(file_get_contents($manifestPath), true);
         wp_enqueue_script('wordplate', get_theme_file_uri('assets/' . $manifest['resources/js/index.js']['file']));
-        wp_enqueue_style('wordplate', get_theme_file_uri('assets/' . $manifest['resources/sass/index.scss']['file'][0]));
+        wp_enqueue_style('wordplate', get_theme_file_uri('assets/' . $manifest['resources/sass/index.scss']['file']));
     }
 });
 

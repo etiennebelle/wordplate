@@ -1,17 +1,13 @@
 {
   "resources/js/index.js": {
-    "file": "index-l0sNRNKZ.js",
+    "file": "index-el7nqgm-.js",
     "name": "index",
     "src": "resources/js/index.js",
     "isEntry": true
   },
   "resources/sass/index.scss": {
-    "file": "index-DiAWKUGo.css",
+    "file": "index-PhemhO6c.css",
     "src": "resources/sass/index.scss",
     "isEntry": true
-  },
-  "resources/static/fonts/NeueMontreal-Regular.otf": {
-    "file": "NeueMontreal-Regular-CxM6MvLr.otf",
-    "src": "resources/static/fonts/NeueMontreal-Regular.otf"
   }
 }
