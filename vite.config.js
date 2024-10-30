@@ -10,7 +10,7 @@ export default defineConfig({
     assetsDir: '',
     emptyOutDir: true,
     manifest: true,
-    outDir: `public/themes/${process.env.WP_DEFAULT_THEME}/assets`,
+    outDir: `public/themes/${process.env.WP_DEFAULT_THEME}/dist`,
     rollupOptions: {
       input: [
         'resources/js/index.js',
