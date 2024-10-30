@@ -11,3 +11,5 @@
 /public/wordpress
 /vendor
 auth.json
+/resources/static/fonts/*
+!/resources/static/fonts/.gitkeep
