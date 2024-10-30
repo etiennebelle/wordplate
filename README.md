@@ -6,6 +6,8 @@
 
 `composer update`
 
+`npm install`
+
 ## Features
 
 - **Vite JS** For building and minifying your CSS and JavaScript
