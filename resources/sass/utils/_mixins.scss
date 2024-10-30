@@ -1,0 +1,37 @@
+@use 'variables' as var;
+
+@mixin device($alias) {
+  @if $alias == "mobile" {
+    @media #{var.$mobile} {
+      @content;
+    }
+  } @else if $alias == "tablet" {
+    @media #{var.$tablet} {
+      @content;
+    }
+  } @else if $alias == "tablet-and-up" {
+    @media #{var.$tablet-and-up} {
+      @content;
+    }
+  } @else if $alias == "pocket" {
+    @media #{var.$pocket} {
+      @content;
+    }
+  } @else if $alias == "laptop" {
+    @media #{var.$laptop} {
+      @content;
+    }
+  } @else if $alias == "laptop-and-up" {
+    @media #{var.$laptop-and-up} {
+      @content;
+    }
+  } @else if $alias == "desktop" {
+    @media #{var.$desktop} {
+      @content;
+    }
+  } @else if $alias == "widescreen" {
+    @media #{var.$widescreen} {
+      @content;
+    }
+  }
+}

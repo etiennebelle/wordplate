@@ -1,0 +1,17 @@
+@use 'sass:math';
+
+@function vw($px, $context: 1440px){
+  @return calc(($px * 100vw) / $context);
+}
+
+@function rem($px, $context: 16px){
+  @if (math.is-unitless($px)) {
+    $px: $px * 1px;
+  }
+
+  @if (math.is-unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return calc($px / $context * 1rem);
+}

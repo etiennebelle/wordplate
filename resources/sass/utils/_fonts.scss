@@ -1,0 +1,50 @@
+@use 'mixins' as mix;
+@use 'functions' as func;
+
+@font-face {
+  font-family: 'NeueMontreal-Regular';
+  src: url('/fonts/NeueMontreal-Regular.otf') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.headline{
+  font-family: 'NeueMontreal-Regular', 'sans-serif';
+  color: var(--color-black);
+  line-height: 1;
+
+  &-light{
+    color: var(--color-light);
+  }
+
+  &-xl{
+    font-size: func.vw(120px);
+
+    @include mix.device('pocket'){
+      font-size: func.rem(72px);
+    }
+  }
+}
+
+.body{
+  font-family: 'NeueMontreal-Regular', 'sans-serif';
+  color: var(--color-black);
+  line-height: 1;
+
+  &-xl{
+    font-size: func.vw(48px);
+
+    @include mix.device('pocket'){
+      font-size: func.rem(24px);
+    }
+  }
+
+  &-md{
+    font-size: func.vw(24px);
+
+    @include mix.device('pocket'){
+      font-size: func.rem(16px);
+    }
+  }
+}
