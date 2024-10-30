@@ -10,6 +10,7 @@
     "require": {
         "php": "^8.2",
         "composer/installers": "^2.3",
+        "koodimonni-language/core-fr_fr": "*",
         "roots/bedrock-autoloader": "^1.0.4",
         "roots/wordpress": "^6.6.2",
         "roots/wp-password-bcrypt": "^1.2",
@@ -29,6 +30,13 @@
                 "wpackagist-plugin/*",
                 "wpackagist-theme/*"
             ]
+        },
+        {
+            "type": "composer",
+            "url": "https://wp-languages.github.io",
+            "only": [
+                "koodimonni-language/*"
+            ]
         }
     ],
     "minimum-stability": "stable",
@@ -41,6 +49,7 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "koodimonni/composer-dropin-installer": true,
             "roots/wordpress-core-installer": true
         },
         "optimize-autoloader": true,
@@ -59,6 +68,9 @@
             "public/themes/{$name}": [
                 "type:wordpress-theme"
             ]
+        },
+        "dropin-paths": {
+            "public/languages/": ["vendor:koodimonni-language"]
         },
         "wordpress-install-dir": "public/wordpress"
     },

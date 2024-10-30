@@ -63,7 +63,7 @@ define('AUTOMATIC_UPDATER_DISABLED', env('AUTOMATIC_UPDATER_DISABLED', true));
 // Disable WP-Cron (wp-cron.php) for faster performance.
 define('DISABLE_WP_CRON', env('DISABLE_WP_CRON', false));
 
-// Prevent file edititing from the dashboard.
+// Prevent file editing from the dashboard.
 define('DISALLOW_FILE_EDIT', env('DISALLOW_FILE_EDIT', true));
 
 // Disable plugin and theme updates and installation from the dashboard.
